@@ -26,10 +26,6 @@ require_once 'header.php'; ?>
                        href="#nav-howtoconnect" role="tab" aria-controls="nav-howtoconnect" aria-selected="false"><?php elang('how_to_connect'); ?></a>
                     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                        role="tab" aria-controls="nav-contact" aria-selected="false"><?php elang('contact'); ?></a>
-                    <?php if(!empty(get_config('supported_langs'))) { ?>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="modal" data-target="#lang-modal"
-                       role="tab" aria-controls="nav-contact" aria-selected="false"><?php elang('change_lang_head'); ?></a>
-                    <?php } ?>
                 </div>
             </nav>
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -81,10 +77,6 @@ require_once 'header.php'; ?>
                                             <?php elang('change_password'); ?>
                                         </button>
                                     <?php } ?>
-                                    <button type="button" class="btn btn-info" data-toggle="modal"
-                                            data-target="#restorepassword-modal">
-                                        <?php elang('restore_password'); ?>
-                                    </button>
                                 </div>
                                 <?php if (get_config('2fa_support')) { ?>
                                     <div class="text-center" data-aos="fade-up" data-aos-delay="100" style="margin-top: 5px;">
@@ -138,10 +130,6 @@ require_once 'header.php'; ?>
                                 <?php }
                                 if (get_config('vote_system')) { ?>
                                     <div class="text-center" style="margin-top: 5px;">
-                                        <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                data-target="#vote-modal">
-                                            <?php elang('vote_for_us'); ?>
-                                        </button>
                                     </div>
                                     <div class="modal" id="vote-modal">
                                         <div class="modal-dialog">

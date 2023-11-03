@@ -11,7 +11,8 @@ use SebastianBergmann\Timer\Timer;
 ?>
 </div>
 <footer class="text-center">
-    Developed by <a href="http://masterking32.com">MasterkinG32.CoM</a>
+    认准唯一官方客服QQ：275909559
+    <br>
     - <?php echo "Load " . Timer::resourceUsage(); ?>
 </footer>
 </body>
